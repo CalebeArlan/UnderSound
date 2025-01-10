@@ -1,4 +1,6 @@
-﻿Musica musica1 = new Musica();
+﻿using UnderSound;
+
+Musica musica1 = new Musica();
 musica1.nome = "For Those Who Wait";
 musica1.artista = "Fireflight";
 musica1.duracao = 340;
@@ -12,5 +14,7 @@ musica2.disponivel = false;
 
 musica1.ExibirFichaTecnica();
 musica2.ExibirFichaTecnica();
+
+
 
 
