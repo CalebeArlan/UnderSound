@@ -20,4 +20,10 @@
 			Console.WriteLine("Adquira o plano Plus+");
 		}
     }
+
+	public void ExibirNomeArtista()
+	{
+		Console.WriteLine($"Nome: {nome}");
+		Console.WriteLine($"Artista: {artista}");
+	}
 }
