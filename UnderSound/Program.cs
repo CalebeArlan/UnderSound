@@ -1,22 +1,20 @@
 ﻿using UnderSound;
 
-Musica musica1 = new Musica();
-musica1.Nome = "For Those Who Wait";
-musica1.Artista = "Fireflight";
-musica1.Disponivel = true;
+Album albumDoSkillet = new Album();
+albumDoSkillet.Nome = "Rise";
 
+Musica musica1 = new Musica();
+musica1.Nome = "Rise";
+musica1.Duracao = 260;
 
 Musica musica2 = new Musica();
-musica2.Nome] = "Debaixo da Terra";
-musica2.Artista = "Os Under-Undergrounds";
-musica2.Duracao = 290;
-musica2.Disponivel = false;
+musica2.Nome = "Sick of It";
+musica2.Duracao = 190;
 
-Console.WriteLine(musica1.DescricaoResumida);
+albumDoSkillet.AdicionarMusica(musica1);
+albumDoSkillet.AdicionarMusica(musica2);
 
-musica1.ExibirFichaTecnica();
-musica2.ExibirFichaTecnica();
-
+albumDoSkillet.ExibirMusicasDoAlbum();
 
 
 
