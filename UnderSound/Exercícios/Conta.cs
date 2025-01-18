@@ -9,9 +9,10 @@ namespace UnderSound.Exercícios
 {
     public class Conta
     {
-        public int id;
-        public string titular, senha;
-        public float saldo;
+        public int id { get; set; }
+        public string titular { get; set; }
+        public string senha { get; set; }
+        public float saldo { get; set; }
 
         public void ExibirInformacoes()
         {
