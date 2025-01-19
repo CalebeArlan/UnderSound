@@ -9,7 +9,7 @@ namespace UnderSound.Exercícios.SistemaEscola
 	public class Professor
 	{
 		public string Nome;
-		public List<Disciplina> disciplinasLecionadas = new List<Disciplina>;
+		public List<Disciplina> disciplinasLecionadas = new List<Disciplina>();
 
 	}
 }
