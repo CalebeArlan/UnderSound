@@ -1,9 +1,10 @@
 ﻿using UnderSound;
 using UnderSound.Exercícios;
 using UnderSound.Exercícios.SistemaBanco;
+using UnderSound.Exercícios.SistemaCatalogoJogos;
 using UnderSound.Exercícios.SistemaEstoque;
 
-Album albumDoSkillet = new Album("Rise");
+/*Album albumDoSkillet = new Album("Rise");
 
 Genero generoRock = new Genero();
 generoRock.NomeGenero = "Rock";
@@ -33,7 +34,17 @@ albumDoSkillet.ExibirMusicasDoAlbum();
 musica1.ExibirFichaTecnica();
 musica2.ExibirFichaTecnica();
 skillet.ExibirDiscografia();
+*/
 
+Jogo Battlefield = new Jogo("Battlefield", "FPS", 9000);
+Jogo.AdicionarJogo(Battlefield);
+Battlefield.ExibirInformacoes();
+
+
+/*Instanciando Conta com Construtor
+Conta conta = new Conta(1, new Titular("Kamila Cardoso Mendes", "900.451.233-25", "Ararangua, rua das palmeiras, 109"), "teclado1234", 15000, 101, 30000, "C-104");
+Console.WriteLine(conta.Informacoes);
+*/
 
 /*Instanciando Conta
 Conta conta = new Conta();

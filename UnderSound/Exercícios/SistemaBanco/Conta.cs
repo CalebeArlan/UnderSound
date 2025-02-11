@@ -9,15 +9,27 @@ namespace UnderSound.Exercícios.SistemaBanco
 {
     public class Conta
     {
-        public int Id { get; set; }
+		public Conta(int id, Titular titular, string senha, float saldo, int numero, float limite, string agencia)
+		{
+			Id = id;
+			Titular = titular;
+			Senha = senha;
+			Saldo = saldo;
+			Numero = numero;
+			Limite = limite;
+			Agencia = agencia;
+		}
+
+		public int Id { get; set; }
         public Titular Titular { get; set; }
         public string Senha { get; set; }
         public float Saldo { get; set; }
         public int Numero { get; set; }
         public float Limite { get; set; }
         public string Agencia { get; set; }
+		public string Informacoes => $"Conta nº {this.Numero}, Agência {this.Agencia}, Titular: {this.Titular.Nome} - Saldo: {this.Saldo}";
 
-        public void ExibirInformacoes()
+		public void ExibirInformacoes()
         {
             Console.WriteLine($"Titular: {Titular.Nome}");
             Console.WriteLine($"Número da Conta: {Numero}");
